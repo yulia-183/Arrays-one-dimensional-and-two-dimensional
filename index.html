@@ -3,153 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Навчальний модуль: Масиви: одновимірні та двовимірні</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .header {
-            background-color: #0056b3;
-            color: white;
-            padding: 15px 20px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 2.2em;
-        }
-        .navbar {
-            background-color: #007bff;
-            padding: 10px 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .navbar ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        .navbar ul li {
-            margin: 0 20px;
-        }
-        .navbar ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 5px 0;
-            transition: color 0.3s ease;
-        }
-        .navbar ul li a:hover, .navbar ul li a.active {
-            color: #e0f7fa;
-            border-bottom: 2px solid #e0f7fa;
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h2, h3 {
-            color: #0056b3;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-            margin-top: 40px;
-        }
-        .info-box {
-            background-color: #e0f7fa;
-            border-left: 5px solid #00bcd4;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 4px;
-        }
-        .button {
-            display: inline-block;
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-top: 20px;
-            transition: background-color 0.3s ease;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            color: #777;
-            font-size: 0.9em;
-        }
-    </style>
+    <title>Навчальний курс: Масиви (1D & 2D)</title>
+    <link rel="stylesheet" href="styles/custom.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Навчальний модуль: Масиви: одновимірні та двовимірні</h1>
-    </div>
-    <nav class="navbar">
+    <header>
+        <h1>Навчальний курс "Масиви: Одновимірні та Двовимірні"</h1>
+        <p>Для учнів 10-11 класів (базовий рівень)</p>
+        <p>Автор: [Ваше ім'я та прізвище]</p>
+    </header>
+
+    <nav>
         <ul>
-            <li><a href="index.html" class="active">Головна</a></li>
-            <li><a href="main-content.html">Вступ до масивів</a></li>
-            <li><a href="plan/index.html">План курсу</a></li>
-            <li><a href="lessons/index.html">Уроки</a></li>
-            <li><a href="examples.html">Приклади коду</a></li>
-            <li><a href="assessments/index.html">Оцінювання</a></li>
-            <li><a href="README.md">Про курс</a></li>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="#theory">Теорія</a></li>
+            <li><a href="#practice">Практика</a></li>
+            <li><a href="#tests">Тести</a></li>
+            <li><a href="#resources">Ресурси</a></li>
+            <li><a href="theory/glossary.md">Глосарій</a></li>
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="info-box">
-            <p>Цей ресурс містить навчальні матеріали з інформатики на тему "Масиви: одновимірні та двовимірні", розроблені для учнів 10-11 класів. Курс розрахований на 22 уроки та призначений для учнів, які не мають попередніх знань з даної теми.</p>
-            <p>Метою є формування базових знань та практичних навичок роботи з одновимірними та двовимірними масивами в програмуванні.</p>
-        </div>
+    <main>
+        <section id="introduction">
+            <h2>Вступ до курсу</h2>
+            <p>Ласкаво просимо до навчального курсу, присвяченого вивченню масивів в програмуванні! Масиви є одним з фундаментальних понять, що дозволяє ефективно зберігати та обробляти великі обсяги однотипних даних. Цей курс допоможе вам зрозуміти, що таке одновимірні та двовимірні масиви, навчитися працювати з ними та застосовувати їх для вирішення реальних задач.</p>
+            <p>Матеріал розроблено з використанням сучасних інструментів генеративного штучного інтелекту, що робить навчання більш інтерактивним та доступним.</p>
+            <h3>Мета курсу:</h3>
+            <p>Ознайомити учнів з основними поняттями одновимірних та двовимірних масивів, їхньою структурою, способами оголошення, ініціалізації та доступу до елементів, а також навчити використовувати масиви для вирішення типових алгоритмічних задач, формуючи навички програмування.</p>
+            <h3>Очікувані результати навчання:</h3>
+            <p>Після завершення курсу ви зможете:</p>
+            <ul>
+                <li>Називати визначення одновимірного та двовимірного масиву, пояснювати поняття індексу.</li>
+                <li>Пояснювати різницю між типами масивів та обґрунтовувати їх використання.</li>
+                <li>Оголошувати, ініціалізувати та звертатися до елементів масивів у програмному коді.</li>
+                <li>Виконувати базові операції з масивами (введення/виведення, пошук, сума, середнє арифметичне).</li>
+                <li>Виявляти та виправляти типові помилки при роботі з масивами.</li>
+                <li>Розробляти прості програми, що використовують масиви для зберігання та обробки даних.</li>
+            </ul>
+        </section>
 
-        <h2>Огляд курсу</h2>
-        <p>Для детального ознайомлення з курсом, його структурою, цілями та очікуваними результатами навчання, будь ласка, перегляньте файл README.md.</p>
-        <a href="README.md" class="button">Переглянути README.md</a>
+        <section id="theory">
+            <h2>Теоретичний матеріал</h2>
+            <p>Цей розділ містить детальні пояснення кожної теми курсу, супроводжувані прикладами коду на Python та візуальними схемами.</p>
+            <ul>
+                <li><a href="theory/lesson01-02.md">Уроки 1-2: Вступ до масивів</a></li>
+                <li><a href="theory/lesson03-04.md">Уроки 3-4: Оголошення та ініціалізація одновимірних масивів</a></li>
+                <li><a href="theory/lesson05-06.md">Уроки 5-6: Доступ до елементів одновимірного масиву та обробка даних</a></li>
+                <li><a href="theory/lesson07-08.md">Уроки 7-8: Пошук та сортування в одновимірних масивах</a></li>
+                <li><a href="theory/lesson09-10.md">Уроки 9-10: Введення в двовимірні масиви</a></li>
+                <li><a href="theory/lesson11-12.md">Уроки 11-12: Оголошення та ініціалізація двовимірних масивів</a></li>
+                <li><a href="theory/lesson13-14.md">Уроки 13-14: Обробка даних у двовимірних масивах</a></li>
+                <li><a href="theory/lesson15.md">Урок 15: Узагальнення та практичні кейси</a></li>
+            </ul>
+        </section>
 
-        <h2>Навігація по розділах курсу</h2>
-        <p>Використовуйте навігаційне меню вище або посилання нижче для швидкого переходу до основних розділів навчального модуля.</p>
-        <ul>
-            <li>
-                <a href="main-content.html">Вступ до масивів</a>
-                <span>(Загальний огляд теми, чому масиви важливі)</span>
-            </li>
-            <li>
-                <a href="plan/index.html">Детальний план навчального модуля</a>
-                <span>(Розбивка курсу на уроки, підтеми, ключові поняття, практичні завдання)</span>
-            </li>
-            <li>
-                <a href="lessons/index.html">Матеріали уроків</a>
-                <span>(Теоретичні матеріали, приклади коду, завдання для кожного уроку)</span>
-            </li>
-            <li>
-                <a href="examples.html">Приклади коду</a>
-                <span>(Практичні демонстрації роботи з одновимірними та двовимірними масивами)</span>
-            </li>
-            <li>
-                <a href="assessments/index.html">Матеріали для оцінювання</a>
-                <span>(Тестові питання, завдання для контрольних робіт, критерії оцінювання)</span>
-            </li>
-        </ul>
-        <p>Будь ласка, зверніть увагу, що деякі розділи можуть бути порожніми або містити заглушки, оскільки це базова структура. Матеріали будуть додаватися згідно з розробленим планом.</p>
+        <section id="practice">
+            <h2>Практичні завдання</h2>
+            <p>Закріпіть свої знання, виконуючи практичні завдання різного рівня складності.</p>
+            <ul>
+                <li><a href="practice/tasks_lesson03-04.md">Завдання до уроків 3-4</a></li>
+                <li><a href="practice/tasks_lesson05-06.md">Завдання до уроків 5-6</a></li>
+                <li><a href="practice/tasks_lesson07-08.md">Завдання до уроків 7-8</a></li>
+                <li><a href="practice/tasks_lesson11-12.md">Завдання до уроків 11-12</a></li>
+                <li><a href="practice/projects.md">Творчі завдання та проекти</a></li>
+            </ul>
+        </section>
 
-        <footer>
-            <p>&copy; 2025. Всі права захищені.</p>
-            <p>Створено за допомогою генеративного ШІ.</p>
-        </footer>
-    </div>
+        <section id="tests">
+            <h2>Тести для самоперевірки</h2>
+            <p>Перевірте свої знання за допомогою інтерактивних тестів.</p>
+            <ul>
+                <li><a href="tests/self_check_arrays1d.md">Тест: Одновимірні масиви</a></li>
+                <li><a href="tests/self_check_arrays2d.md">Тест: Двовимірні масиви</a></li>
+                </ul>
+        </section>
+
+        <section id="resources">
+            <h2>Додаткові ресурси</h2>
+            <p>Розширте свої знання за допомогою цих корисних посилань та матеріалів.</p>
+            <ul>
+                <li><a href="resources/links.md">Корисні посилання</a></li>
+                <li><a href="theory/glossary.md">Глосарій термінів</a></li>
+                </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 [Ваше ім'я та прізвище]. Усі права захищено.</p>
+        <p>Матеріали розроблені з використанням генеративного ШІ.</p>
+        <p><a href="https://github.com/[Ваш_нікнейм]/arrays-for-beginners" target="_blank">Переглянути репозиторій на GitHub</a></p>
+    </footer>
+
+    <script src="scripts/interactive.js"></script>
 </body>
 </html>
