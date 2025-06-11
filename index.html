@@ -9,9 +9,46 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #f4f4f4;
             color: #333;
+        }
+        .header {
+            background-color: #0056b3;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        .navbar {
+            background-color: #007bff;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar ul li {
+            margin: 0 20px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 0;
+            transition: color 0.3s ease;
+        }
+        .navbar ul li a:hover, .navbar ul li a.active {
+            color: #e0f7fa;
+            border-bottom: 2px solid #e0f7fa;
         }
         .container {
             max-width: 900px;
@@ -21,39 +58,11 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        h1, h2, h3 {
+        h2, h3 {
             color: #0056b3;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 2.5em;
-        }
-        h2 {
             border-bottom: 2px solid #eee;
             padding-bottom: 10px;
             margin-top: 40px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            background: #e9e9e9;
-            margin-bottom: 8px;
-            padding: 10px 15px;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        ul li a {
-            text-decoration: none;
-            color: #0056b3;
-            font-weight: bold;
-        }
-        ul li a:hover {
-            text-decoration: underline;
         }
         .info-box {
             background-color: #e0f7fa;
@@ -70,6 +79,7 @@
             border-radius: 5px;
             text-decoration: none;
             margin-top: 20px;
+            transition: background-color 0.3s ease;
         }
         .button:hover {
             background-color: #0056b3;
@@ -85,9 +95,22 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <h1>Навчальний модуль: Масиви: одновимірні та двовимірні</h1>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="active">Головна</a></li>
+            <li><a href="main-content.html">Вступ до масивів</a></li>
+            <li><a href="plan/index.html">План курсу</a></li>
+            <li><a href="lessons/index.html">Уроки</a></li>
+            <li><a href="examples.html">Приклади коду</a></li>
+            <li><a href="assessments/index.html">Оцінювання</a></li>
+            <li><a href="README.md">Про курс</a></li>
+        </ul>
+    </nav>
 
+    <div class="container">
         <div class="info-box">
             <p>Цей ресурс містить навчальні матеріали з інформатики на тему "Масиви: одновимірні та двовимірні", розроблені для учнів 10-11 класів. Курс розрахований на 22 уроки та призначений для учнів, які не мають попередніх знань з даної теми.</p>
             <p>Метою є формування базових знань та практичних навичок роботи з одновимірними та двовимірними масивами в програмуванні.</p>
@@ -97,23 +120,28 @@
         <p>Для детального ознайомлення з курсом, його структурою, цілями та очікуваними результатами навчання, будь ласка, перегляньте файл README.md.</p>
         <a href="README.md" class="button">Переглянути README.md</a>
 
-        <h2>Структура матеріалів</h2>
+        <h2>Навігація по розділах курсу</h2>
+        <p>Використовуйте навігаційне меню вище або посилання нижче для швидкого переходу до основних розділів навчального модуля.</p>
         <ul>
             <li>
+                <a href="main-content.html">Вступ до масивів</a>
+                <span>(Загальний огляд теми, чому масиви важливі)</span>
+            </li>
+            <li>
                 <a href="plan/index.html">Детальний план навчального модуля</a>
-                <span>(Уроки, підтеми, ключові поняття, практичні завдання)</span>
+                <span>(Розбивка курсу на уроки, підтеми, ключові поняття, практичні завдання)</span>
             </li>
             <li>
                 <a href="lessons/index.html">Матеріали уроків</a>
-                <span>(Теоретичні матеріали, приклади коду, завдання)</span>
+                <span>(Теоретичні матеріали, приклади коду, завдання для кожного уроку)</span>
+            </li>
+            <li>
+                <a href="examples.html">Приклади коду</a>
+                <span>(Практичні демонстрації роботи з одновимірними та двовимірними масивами)</span>
             </li>
             <li>
                 <a href="assessments/index.html">Матеріали для оцінювання</a>
-                <span>(Тестові питання, завдання для контрольних робіт)</span>
-            </li>
-            <li>
-                <a href="docs/index.html">Додаткова документація</a>
-                <span>(Звіти, рефлексія, джерела)</span>
+                <span>(Тестові питання, завдання для контрольних робіт, критерії оцінювання)</span>
             </li>
         </ul>
         <p>Будь ласка, зверніть увагу, що деякі розділи можуть бути порожніми або містити заглушки, оскільки це базова структура. Матеріали будуть додаватися згідно з розробленим планом.</p>
