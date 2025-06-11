@@ -1,2 +1,2 @@
-# _config.yml
-# Просто наявність цього файлу активує Jekyll на GitHub Pages
+markdown: kramdown
+theme: minima
