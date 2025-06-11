@@ -1,0 +1,118 @@
+/* custom.css */
+
+/* Загальні налаштування */
+body {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7fa;
+  color: #222;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+  color: #1a73e8;
+  margin-top: 1.5em;
+}
+
+/* Посилання */
+a {
+  color: #0b66c3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Списки */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+/* Картки/блоки коду */
+pre, code {
+  background-color: #f0f0f0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* Навігація */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 0.6rem 0.8rem;
+}
+
+nav ul li a {
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+nav ul li a:hover {
+  color: #1a73e8;
+}
+
+/* Титульний блок */
+header {
+  background-color: #1a73e8;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Підвал */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #ddd;
+  margin-top: 3rem;
+}
+
+/* Таблиці */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  background-color: #ffffff;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #e8f0fe;
+  color: #222;
+  font-weight: bold;
+}
+
+td, th {
+  padding: 0.6rem;
+  text-align: left;
+}
+
+/* Відповідність для мобільних пристроїв */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  body {
+    padding: 0 0.5rem;
+  }
+}
